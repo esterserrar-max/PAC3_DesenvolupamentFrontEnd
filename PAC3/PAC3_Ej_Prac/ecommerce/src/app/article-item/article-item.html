@@ -1,0 +1,29 @@
+<article class="article-card">
+    <img [src]="article.imageUrl" [alt]="article.name" />
+
+    <h3>{{ article.name }}</h3>
+    <p class="price">Preu: {{ article.price }} €</p>
+    @if (article.isOnSale) {
+    <p class="available-stock">En estoc · Preu: {{ article.price }} €</p>
+    } @else {
+    <p class="unavailable-stock">Sense estoc · Preu: {{ article.price }} €</p>
+    }
+
+    <button
+  type="button"
+  class="btn-qty"
+  (click)="decrementar()"
+  [disabled]="article.quantityInCart === 0"
+>
+  -
+</button>
+
+<span class="qty">Quantitat: {{ article.quantityInCart }}</span>
+
+<button
+  type="button"
+  class="btn-qty"
+  (click)="incrementar()"
+>
+  +
+</button>

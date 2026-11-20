@@ -1,0 +1,40 @@
+.article-card {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 16px;
+  max-width: 320px;
+}
+
+.article-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+
+.available-stock {
+  color: #15803d; /* Verd */
+  font-weight: 600;
+}
+
+.unavailable-stock {
+  color: #b91c1c; /* Vermell */
+  font-weight: 600;
+}
+
+.btn-qty{
+    border: black 2px solid;
+    padding:0.5rem;
+    
+}
+
+.btn-qty:disabled {
+  background-color: dimgray;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.qty{
+    padding: 0.5rem;
+}
